@@ -1,3 +1,5 @@
+// 1つのカウンターのデータを管理するファイル
+
 export default class Counter {
     constructor(
         name = "",

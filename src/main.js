@@ -1,7 +1,11 @@
-import { initialize } from './controllers/CounterController';
+// アプリを起動するためのファイル
+
+import { initialize } from './controllers/CounterController'; // CounterController.jsのinitialize関数を読み込みアプリを初期化
 import './style.css';
 import './app.css';
 
+// HTMLを生成
+// index.htmlの<div id="app"></div>にHTMLを代入する
 document.querySelector('#app').innerHTML = `
 <h2>
   合計：<span id="total">0</span>
@@ -26,9 +30,12 @@ document.querySelector('#app').innerHTML = `
     全選択
   </label>
 
-  <div id="counterList"></div>
+  <div id="counterList">
+  </div>
+  
 </div>
 
 `;
 
+// アプリを起動する（＊これが無いと画面だけ表示されてボタンは動かない）
 initialize();

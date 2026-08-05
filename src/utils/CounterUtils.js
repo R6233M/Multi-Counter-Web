@@ -1,4 +1,4 @@
-// DOM取得処理を共通化する
+// DOM取得処理を共通化したファイル
 
 export function getCounters() {
     return [...document.querySelectorAll(".counter")];

@@ -1,3 +1,5 @@
+// カウンターのHTML生成を担当するファイル
+
 export function createCounterHTML(
     name = "",
     count = 0,
